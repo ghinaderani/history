@@ -7,6 +7,7 @@ class HistoryPage extends StatefulWidget {
 }
 
 class _HistoryPageState extends State<HistoryPage> {
+  TextEditingController SearshController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor: Colors.black,
@@ -53,6 +54,7 @@ InkWell(onTap: (){},
             SizedBox(height:42 ,
             width: 530,
               child: TextField(
+                controller: SearshController,
                       decoration: InputDecoration
                       (border: OutlineInputBorder(borderRadius: BorderRadius.circular(20),
                       ),
